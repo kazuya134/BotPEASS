@@ -145,7 +145,7 @@ def filter_cves(cves: list, last_time: datetime.datetime, tt_filter: Time_Type) 
 
         if cve_time > new_last_time:
             new_last_time = cve_time
-
+        filtered_cves.append(cve)
     return filtered_cves, new_last_time
 
 
